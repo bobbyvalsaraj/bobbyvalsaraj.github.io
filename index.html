@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bobby Valsaraj | Portfolio</title>
+  <meta name="description" content="Bobby Valsaraj — Scientific Assistant (Computer Division, BARC Hospital) | MSc Computer Science | Software Engineer & AI/ML Developer" />
+  <style>
+    :root{
+      --bg:#0b1220; --text:rgba(255,255,255,.92); --muted:rgba(255,255,255,.72);
+      --border:rgba(255,255,255,.12); --accent:#7c3aed; --accent2:#22c55e;
+      --shadow:0 20px 70px rgba(0,0,0,.5); --radius:18px; --radius2:26px; --max:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui;background:var(--bg);color:var(--text)}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:var(--max);margin:auto;padding:22px}
+    .topbar{position:sticky;top:0;background:#0b1220cc;border-bottom:1px solid var(--border)}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:700}
+    .links a{margin:0 10px;color:var(--muted)}
+    .btn{padding:10px 14px;border-radius:14px;border:1px solid var(--border)}
+    .primary{background:#7c3aed22}
+    section{padding:40px 0}
+    h1{font-size:38px}
+    h2{font-size:24px}
+    .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+    .card{border:1px solid var(--border);padding:18px;border-radius:var(--radius);background:#ffffff08}
+    .skills span{border:1px solid var(--border);padding:6px 10px;border-radius:999px;margin:4px;display:inline-block}
+    footer{border-top:1px solid var(--border);padding:20px;color:var(--muted)}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}.links{display:none}}
+  </style>
+</head>
+<body>
+<div class="topbar">
+  <div class="container nav">
+    <div class="brand">Bobby Valsaraj</div>
+    <div class="links">
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="btn" href="https://github.com/bobbyvalsaraj" target="_blank">GitHub</a>
+  </div>
+</div>
+
+<main class="container">
+<section>
+  <div class="grid">
+    <div class="card">
+      <h1>Software Engineer & AI/ML Developer</h1>
+      <p>
+        Scientific Assistant at <b>BARC Hospital</b> with strong academic grounding in Computer Science.
+        I build end-to-end systems including Java/MySQL applications, cloud-integrated AI solutions,
+        and federated learning pipelines for healthcare and edge environments.
+      </p>
+      <a class="btn primary" href="#projects">View Projects</a>
+      <a class="btn" href="assets/resume.pdf">Download Resume</a>
+    </div>
+
+    <div class="card">
+      <h3>About Me</h3>
+      <p>
+        MSc Computer Science graduate and Scientific Assistant (Computer Division, BARC Hospital).
+        Passionate about healthcare technology, privacy-preserving AI, and well-documented software systems.
+      </p>
+      <div class="skills">
+        <span>Python</span><span>Java</span><span>MySQL</span><span>TensorFlow</span>
+        <span>AWS</span><span>Flask</span><span>Git</span>
+      </div>
+      <p>
+        🔗 <a href="https://www.linkedin.com/in/bobbyvalsaraj" target="_blank">LinkedIn</a><br>
+        📧 <a href="mailto:bobbyvalsaraj@gmail.com">bobbyvalsaraj@gmail.com</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Cloud-Based Healthcare Diagnostics</h3>
+      <p>AI diagnostic system using TensorFlow with AWS S3 integration.</p>
+      <a href="https://github.com/bobbyvalsaraj/cloud-healthcare-diagnostics">GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Federated Learning on Edge Devices</h3>
+      <p>Privacy-preserving collaborative learning using Flower framework.</p>
+      <a href="https://github.com/bobbyvalsaraj/federated-learning-edge">GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Blood Donors Master DB System</h3>
+      <p>Java/MySQL desktop system with role-based access.</p>
+      <a href="https://github.com/bobbyvalsaraj/blood-donors-master-db">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <h2>Research Interests</h2>
+  <ul>
+    <li>Federated Learning & Privacy-Preserving AI</li>
+    <li>Healthcare AI Systems</li>
+    <li>Edge-Cloud Architectures</li>
+  </ul>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>Scientific Assistant – Computer Division</h3>
+    <p><b>BARC Hospital</b></p>
+    <ul>
+      <li>System support and software assistance in hospital IT environment</li>
+      <li>Documentation, troubleshooting, and workflow support</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    📧 <a href="mailto:bobbyvalsaraj@gmail.com">bobbyvalsaraj@gmail.com</a><br>
+    🔗 <a href="https://github.com/bobbyvalsaraj">GitHub</a><br>
+    🔗 <a href="https://www.linkedin.com/in/bobbyvalsaraj">LinkedIn</a>
+  </p>
+</section>
+
+<footer>
+  © <span id="year"></span> Bobby Valsaraj
+</footer>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
